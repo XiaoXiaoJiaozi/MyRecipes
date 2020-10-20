@@ -14,6 +14,8 @@
 		8D4E39B6253E42E3007F27F9 /* MyRecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E39B4253E42E3007F27F9 /* MyRecipes.xcdatamodeld */; };
 		8D4E39B8253E42E4007F27F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E39B7253E42E4007F27F9 /* Assets.xcassets */; };
 		8D4E39BB253E42E4007F27F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E39B9253E42E4007F27F9 /* LaunchScreen.storyboard */; };
+		8D4E39C6253E46D3007F27F9 /* recipes.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E39C5253E46D3007F27F9 /* recipes.png */; };
+		8D4E39C9253E4E41007F27F9 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E39C8253E4E41007F27F9 /* RecipeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8D4E39B7253E42E4007F27F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D4E39BA253E42E4007F27F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D4E39BC253E42E4007F27F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D4E39C5253E46D3007F27F9 /* recipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipes.png; sourceTree = SOURCE_ROOT; };
+		8D4E39C8253E4E41007F27F9 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		8D4E399F253E42E3007F27F9 = {
 			isa = PBXGroup;
 			children = (
+				8D4E39C4253E455B007F27F9 /* images */,
 				8D4E39AA253E42E3007F27F9 /* MyRecipes */,
 				8D4E39A9253E42E3007F27F9 /* Products */,
 			);
@@ -58,6 +63,7 @@
 		8D4E39AA253E42E3007F27F9 /* MyRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				8D4E39C8253E4E41007F27F9 /* RecipeTableViewController.swift */,
 				8D4E39AB253E42E3007F27F9 /* AppDelegate.swift */,
 				8D4E39AD253E42E3007F27F9 /* SceneDelegate.swift */,
 				8D4E39AF253E42E3007F27F9 /* ViewController.swift */,
@@ -68,6 +74,14 @@
 				8D4E39B4253E42E3007F27F9 /* MyRecipes.xcdatamodeld */,
 			);
 			path = MyRecipes;
+			sourceTree = "<group>";
+		};
+		8D4E39C4253E455B007F27F9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8D4E39C5253E46D3007F27F9 /* recipes.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D4E39BB253E42E4007F27F9 /* LaunchScreen.storyboard in Resources */,
+				8D4E39C6253E46D3007F27F9 /* recipes.png in Resources */,
 				8D4E39B8253E42E4007F27F9 /* Assets.xcassets in Resources */,
 				8D4E39B3253E42E3007F27F9 /* Main.storyboard in Resources */,
 			);
@@ -144,6 +159,7 @@
 				8D4E39AC253E42E3007F27F9 /* AppDelegate.swift in Sources */,
 				8D4E39AE253E42E3007F27F9 /* SceneDelegate.swift in Sources */,
 				8D4E39B6253E42E3007F27F9 /* MyRecipes.xcdatamodeld in Sources */,
+				8D4E39C9253E4E41007F27F9 /* RecipeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyRecipes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.rockvalleycollege.MyRecipes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,6 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyRecipes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.rockvalleycollege.MyRecipes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
